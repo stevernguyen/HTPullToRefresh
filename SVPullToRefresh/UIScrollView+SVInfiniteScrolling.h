@@ -23,7 +23,7 @@
 
 
 enum {
-	SVInfiniteScrollingStateStopped = 0,
+    SVInfiniteScrollingStateStopped = 0,
     SVInfiniteScrollingStateTriggered,
     SVInfiniteScrollingStateLoading,
     SVInfiniteScrollingStateAll = 10
