@@ -212,6 +212,23 @@ static char UIScrollViewInternalPullToRefreshViews;
     return self;
 }
 
+- (void)setPosition:(SVPullToRefreshPosition)position {
+    _position = position;
+    
+    if (position == SVPullToRefreshPositionTop || position == SVPullToRefreshPositionLeft) {
+        self.titles = [NSMutableArray arrayWithObjects:NSLocalizedString(@"Pull to load previous chapter",),
+                       NSLocalizedString(@"Release to load previous chapter",),
+                       NSLocalizedString(@"Loading...",),
+                       nil];
+    }
+    else {
+        self.titles = [NSMutableArray arrayWithObjects:NSLocalizedString(@"Pull to load next chapter",),
+                       NSLocalizedString(@"Release to load next chapter",),
+                       NSLocalizedString(@"Loading...",),
+                       nil];
+    }
+}
+
 + (CGRect)rectForRefreshViewAtPosition:(SVPullToRefreshPosition)position scrollView:(UIScrollView*)scrollView {
     CGFloat yOrigin = 0;
     CGFloat xOrigin = 0;
@@ -604,6 +621,7 @@ static char UIScrollViewInternalPullToRefreshViews;
         _titleLabel.font = [UIFont boldSystemFontOfSize:14];
         _titleLabel.backgroundColor = [UIColor clearColor];
         _titleLabel.textColor = textColor;
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_titleLabel];
     }
     return _titleLabel;

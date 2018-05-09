@@ -182,6 +182,7 @@
 				TargetAttributes = {
 					F39ACCF21D326BAF0095F4F3 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = LD2FHUDK85;
 					};
 				};
 			};
@@ -343,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LD2FHUDK85;
 				INFOPLIST_FILE = HTPullToRefreshDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoang.tran.HTPullToRefreshDemo;
@@ -354,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LD2FHUDK85;
 				INFOPLIST_FILE = HTPullToRefreshDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hoang.tran.HTPullToRefreshDemo;
