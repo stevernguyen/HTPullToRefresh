@@ -53,6 +53,8 @@ NSString *kSquareCellReuseID = @"SquareCell";
         refreshView.titleLabel.font = [UIFont boldSystemFontOfSize:13];
         refreshView.titleLabel.numberOfLines = 0;
     }
+    
+    self.collectionView.pullToLoadChapter = YES;
 }
 
 - (void)insertRowAtLeft {

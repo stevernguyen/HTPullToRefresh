@@ -30,6 +30,7 @@ typedef NS_ENUM(NSUInteger, SVPullToRefreshPosition) {
 @property (nonatomic, strong, readonly) SVPullToRefreshView *pullToRefreshView; //get the first SVPullToRefreshView in the pullToRefreshViews array
 @property (nonatomic, strong, readonly) NSArray *pullToRefreshViews;
 @property (nonatomic, assign) BOOL showsPullToRefresh;
+@property (nonatomic, assign) BOOL pullToLoadChapter;   // call after add pullToRefresh
 
 //getter
 - (SVPullToRefreshView*)pullToRefreshViewAtPosition:(SVPullToRefreshPosition)position;

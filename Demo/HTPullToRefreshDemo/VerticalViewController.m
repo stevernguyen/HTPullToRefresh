@@ -39,6 +39,7 @@ NSString *kVerticalCellReuseID = @"kVerticalCellReuseID";
 - (void)setupPullToRefresh {
     __weak VerticalViewController *weakSelf = self;
 
+    
     [self.tableView addPullToRefreshWithActionHandler:^{
         [weakSelf insertRowAtTop];
     } position:SVPullToRefreshPositionTop];
@@ -46,6 +47,8 @@ NSString *kVerticalCellReuseID = @"kVerticalCellReuseID";
     [self.tableView addPullToRefreshWithActionHandler:^{
         [weakSelf insertRowAtBottom];
     } position:SVPullToRefreshPositionBottom];
+    
+    self.tableView.pullToLoadChapter = YES;
 }
 
 
