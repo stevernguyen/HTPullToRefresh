@@ -128,7 +128,7 @@ UIEdgeInsets scrollViewOriginalContentInsets;
     if(self = [super initWithFrame:frame]) {
         
         // default styling values
-        self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+        self.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         self.state = SVInfiniteScrollingStateStopped;
         self.enabled = YES;
